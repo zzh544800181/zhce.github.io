@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 心猿悟空</title>
+  <title>hexo搭建及发布博客 | 心猿悟空</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="心猿悟空">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="大家好，这篇文章主要讲述了如何通过hexo搭建一个属于自己的blog，写篇文章，并且发布到github上去。欢迎阅读~ 必要的安装 安装git bash 下载windows版本的git bash安装及好，安装好通过git version查看版本   安装nodeJs hexo是基于nodeJs的静态博客，nodeJs有LTS(长期支持版)、Current(当前最新版)两个版本，最后安装好通过no">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建及发布博客">
+<meta property="og:url" content="http://yoursite.com/2018/05/05/hexo-build/index.html">
 <meta property="og:site_name" content="心猿悟空">
+<meta property="og:description" content="大家好，这篇文章主要讲述了如何通过hexo搭建一个属于自己的blog，写篇文章，并且发布到github上去。欢迎阅读~ 必要的安装 安装git bash 下载windows版本的git bash安装及好，安装好通过git version查看版本   安装nodeJs hexo是基于nodeJs的静态博客，nodeJs有LTS(长期支持版)、Current(当前最新版)两个版本，最后安装好通过no">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-05T13:39:54.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="心猿悟空">
+<meta name="twitter:title" content="hexo搭建及发布博客">
+<meta name="twitter:description" content="大家好，这篇文章主要讲述了如何通过hexo搭建一个属于自己的blog，写篇文章，并且发布到github上去。欢迎阅读~ 必要的安装 安装git bash 下载windows版本的git bash安装及好，安装好通过git version查看版本   安装nodeJs hexo是基于nodeJs的静态博客，nodeJs有LTS(长期支持版)、Current(当前最新版)两个版本，最后安装好通过no">
   
     <link rel="alternative" href="/atom.xml" title="心猿悟空" type="application/atom+xml">
   
@@ -150,76 +154,188 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-hexo-build" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      hexo搭建及发布博客
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/05/hexo-build/" class="archive-article-date">
+
+        
+        <a href="/2018/05/05/hexo-build/" class="archive-article-date">
   	<time datetime="2018-05-05T13:32:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-05</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/05/hexo-build/">hexo搭建及发布博客</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 大家好，这篇文章主要讲述了如何通过hexo搭建一个属于自己的blog，写篇文章，并且发布到github上去。欢迎阅读~</p>
+<h2 id="必要的安装"><a href="#必要的安装" class="headerlink" title="必要的安装"></a>必要的安装</h2><ul>
+<li>安装git bash<blockquote>
+<p>下载windows版本的git bash安装及好，安装好通过<code>git version</code>查看版本</p>
+</blockquote>
+</li>
+<li>安装nodeJs<blockquote>
+<p>hexo是基于nodeJs的静态博客，nodeJs有LTS(长期支持版)、Current(当前最新版)两个版本，最后安装好通过<code>node -v</code>查看版本</p>
+</blockquote>
+</li>
+<li>安装hexo<blockquote>
+<p>创建个文件夹存放hexo,通过执行命令 <code>npm i -g hexo</code>,安装完后<code>hexo -v</code>查看版本</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="进入到第二步——初始化"><a href="#进入到第二步——初始化" class="headerlink" title="进入到第二步——初始化"></a>进入到第二步——初始化</h2><ul>
+<li>通过命令<code>hexo init</code>初始化</li>
+<li>执行<code>hexo clean</code>、 <code>hexo generate</code>、<code>hexo server</code></li>
+<li>访问<code>http://localhost:4000</code>就可以看到自己的blog</li>
+<li>访问<code>https://hexo.io/themes/</code>下载各种themes，找到喜欢的按照文档安装使用 </li>
+</ul>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><ul>
+<li>执行`hexo new ‘文章名’</li>
+<li>进入到<code>source/_posts</code>路径下去就能看到新建的<code>&#39;文章名&#39;.md</code>的文本</li>
+<li>采用md的方式写好自己的文章</li>
+</ul>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><ul>
+<li>在<code>_config.yml</code>文件中修改参数，例如：<blockquote>
+<p>deploy:<br>  type:git</p>
+</blockquote>
+</li>
+<li>执行<code>hexo deploy</code>发布</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/05/hexo-build/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/05/hello-world/" class="archive-article-date">
-  	<time datetime="2018-05-05T12:03:27.051Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-05</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/05/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +358,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
